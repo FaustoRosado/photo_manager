@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "PhotoManager" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "ManagerApp" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -28,11 +28,7 @@
         </button>
         <a class="navbar-brand" href="#">PhotoManager</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
-          <ul class="nav navbar-nav">
-            <li><%= link_to "Link1", "/path1"  %></li>
-            <li><%= link_to "Link2", "/path2"  %></li>
-            <li><%= link_to "Link3", "/path3"  %></li>
-          </ul>
+          
           <ul class="nav navbar-right col-md-4">
 
             <% if current_user %>
@@ -55,7 +51,7 @@
 
             <li class="col-md-4 pull-right">
 
-              <%= link_to('Sign In', new_user_session_path, class: 'btn btn-secondary', title: 'Sign In') %>
+              <%= link_to('Sign In', new_user_session_path, class: 'btn btn-success', title: 'Sign In') %>
 
             </li>
 
@@ -75,7 +71,7 @@
       </div><!--/row-->
 
       <footer>
-        <p>&copy; Company 2019</p>
+        <p>&copy; Manager 2019</p>
       </footer>
 
     </div> <!-- /container -->
